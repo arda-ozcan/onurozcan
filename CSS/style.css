@@ -1,0 +1,32 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.animated-line {
+    display: block;
+    height: 4px;
+    margin: -10px auto;
+    background-color: white;
+    width: 0;
+    animation: slideLine 2s ease-in-out forwards;
+}
+
+.dropdown .dropdown-menu {
+    display: none;
+}
+
+/* > = Ilk child secici */
+.dropdown:hover>.dropdown-menu,
+.dropend:hover>.dropdown-menu {
+    display: block;
+}
+
+@keyframes slideLine {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 32%;
+    }
+}
